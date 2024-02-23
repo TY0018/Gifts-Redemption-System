@@ -1,6 +1,5 @@
 //Purpose: Handles the logic for sending search response.
 import { Request, Response } from 'express';
-import * as db from '../db';
 import searchService from '../services/searchService';
 
 const searchController = async (req: Request, res:Response) => {  
@@ -9,7 +8,6 @@ const searchController = async (req: Request, res:Response) => {
         try {
             const teamName = await searchService(staff);
             
-            //returns the number of rows affected by the query
             if (teamName){
                 res.status(200).json({message: 'Staff found.', teamName: teamName})
             } else{

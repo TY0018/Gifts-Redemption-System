@@ -1,4 +1,4 @@
-// Import necessary modules and functions
+// Purpose: Test the search function
 import searchService from '../src/services/searchService';
 
 // Describe the test suite
@@ -13,7 +13,6 @@ describe('Search Function Tests', () => {
     // Expected result: The team name associated with the valid staff pass ID
     const expectedResult = 'HUFFLEPUFF';
 
-    // Assert that the result matches the expected team name
     expect(result).toEqual(expectedResult);
   });
   test('Search Function - Invalid Staff Pass ID', async () => {
@@ -25,7 +24,6 @@ describe('Search Function Tests', () => {
     // Expected result: The team name to be null
     const expectedResult = null;
 
-    // Assert that the result matches the expected team name
     expect(result).toEqual(expectedResult);
   });
 });

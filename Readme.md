@@ -28,7 +28,7 @@ Ensure you have the following installed:
     - user: change to your own username for PostgreSQL
     - password: change to your own password for PostgreSQL
 
-and you are done! 
+and you are done!
 
 ### Testing
 

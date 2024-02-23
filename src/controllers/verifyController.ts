@@ -9,7 +9,6 @@ const verifyController = async (req: Request, res:Response) => {
         try {
             const redeemedStatus = await verifyService(team);
             
-            //returns the number of rows affected by the query
             if (redeemedStatus === true){
                 
                 res.status(200).json({message: "Team already redeemed their gift.", redeemed: true})

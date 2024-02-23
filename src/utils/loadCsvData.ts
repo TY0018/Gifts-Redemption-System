@@ -7,7 +7,7 @@ async function importCSVData(tableName: string, csvFilePath: string) {
     const client = await db.getClient();
 
     try {
-        // Check if the table has non-null values in any column
+        // Check if the table has been loaded before
         const hasLoaded = await checkTableForRows(client, tableName);
 
         if (!hasLoaded) {

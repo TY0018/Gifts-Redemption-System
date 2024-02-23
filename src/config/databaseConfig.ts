@@ -1,4 +1,4 @@
-// Replace these values with your PostgreSQL connection details
+// Replace the user and password values with your PostgreSQL connection details
 const connectionConfig = {
     user: 'newuser',
     host: 'localhost',

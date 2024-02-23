@@ -1,3 +1,4 @@
+//Purpose: Test redeem function
 import redeemService from '../src/services/redeemService';
 
 describe('redeem Function Tests', () => {
